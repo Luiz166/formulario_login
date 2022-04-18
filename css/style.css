@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #EEE;
+    --azul: #3D9DB3;
+    --azul-fraco: #E1EAEB;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+.main{
+    background-color: #F6F6F6;
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid var(--azul);
+    overflow: hidden;
+}
+
+.main h1{
+    text-align: center;
+    color: #006571;
+}
+
+.main h1::after {
+    content: "";
+    margin: 10px auto 0 auto;
+    display: block;
+    width: calc(100% - 40px);
+    height: 2px;
+    background: radial-gradient(var(--azul), #00000000);
+    border-radius: 100%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 0;
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-group--row{
+    flex-direction: row;
+}
+.form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #809295;
+}
+
+.form-group input{
+    padding: 7px 12px;
+    border: 1px solid #CACACA;
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: #D2D1D1;
+}
+
+.main2{
+    background-color: gray;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 25px;
+}
+
+
+button{
+    background-color: var(--azul);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+}
+
+
+.main__register {
+    padding: 20px;
+    background-color: var(--azul-fraco);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 20px;
+}
+
+.main__register span {
+    color: #929191;
+}
+
+.main__register a{
+    text-decoration: none;
+    color: var(--azul);
+    padding: 5px 10px;
+    border: 2px solid #DBE167;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    font-weight: 700;
+}
